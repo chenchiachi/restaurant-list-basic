@@ -18,6 +18,12 @@
 
 <!-- restaurant list -->
 <div class="container mt-5">
+  {{#if restaurants}}
+  {{else}}
+  <div class="d-flex justify-content-center">
+    <p>無與關鍵字相符的餐廳</p>
+  </div>
+  {{/if}}
   <div class="row">
     <div class="col-md-10 col-12 mx-auto">
       <div class="card-columns">
